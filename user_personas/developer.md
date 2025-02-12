@@ -1,6 +1,6 @@
 ## Developer
 **Name:** 
-George Washington
+George Washington  
 **Role:** 
 Software Developer  
 **Demographics:** 
