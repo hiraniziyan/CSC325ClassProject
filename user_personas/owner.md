@@ -14,5 +14,6 @@
 - I do not want a website that is hard to use
 - I am frustrated when developments do not occur timely
 - I dislike having the website run slower and not be optimized
+- I dislike not being informed about issues that are slowing down the development process
 **Scenario:** 
 Ziyan hires developers and tells them specific requirements for the web page. He ensures the page is built according to his needs, and he looks for more ways to enhance the portfolio. He uses the portfolio template to showcase his work.
