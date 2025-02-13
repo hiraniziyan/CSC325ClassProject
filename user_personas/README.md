@@ -22,4 +22,4 @@ Each user persona includes:
 - **Testing:** Ensure workflows and functionalities work for realistic test cases.  
 - **Documentation:** consistent and readable documentation to keep developers informed about code segments
 
-By defining and considering these personas, the project remains user-focused, developer-friendly, and aligned with stakeholder goals.  
+By defining these personas, the project remains user-focused, developer-friendly, and aligned with stakeholder goals.  
