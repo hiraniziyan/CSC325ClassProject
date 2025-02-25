@@ -1,7 +1,7 @@
 # CSC325ClassProject
 
 # Overview
-Create a portfolio to showcase skills, projects, and other experiences for future employers
+Create a portfolio to showcase skills, projects, and other experiences for future employers.
 
 # Objectives
 - show proficiency in web development, programming, and data analysis
