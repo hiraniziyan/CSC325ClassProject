@@ -1,3 +1,4 @@
+'use client'
 import * as React from 'react';
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
@@ -7,6 +8,15 @@ import NextLink from 'next/link';
 import ProTip from '@/components/ProTip';
 import Copyright from '@/components/Copyright';
 import Button from '@mui/material/Button';
+import Hero from '@/components/Hero'
+import LogoCollection from '@/components/LogoCollection';
+import Features from '@/components/Features';
+import Testimonials from '@/components/Testimonials';
+import Highlights from '@/components/Highlights';
+import Pricing from '@/components/Pricing';
+import FAQ from '@/components/FAQ';
+import Footer from '@/components/Footer';
+import type {} from '@mui/material/themeCssVarsAugmentation';
 
 export default function Home() {
   return (
@@ -20,16 +30,22 @@ export default function Home() {
           alignItems: 'center',
         }}
       >
-        <Typography variant="h4" component="h1" sx={{ mb: 2 }}>
-          Ziyan Material UI - Next.js App Router example in TypeScript
-        </Typography>
-        <Link href="/about" color="secondary" component={NextLink}>
-          Go to the about page
-        </Link>
-        <Button variant = "contained"> Text </Button>
-        <ProTip />
-        <Copyright />
-      </Box>
+        <Hero />
+        <div>
+          <LogoCollection />
+          <Features />
+        
+          <Testimonials />
+        
+          <Highlights />
+          
+          <Pricing />
+        
+          <FAQ />
+      
+          <Footer />
+          </div>
+        </Box>
     </Container>
   );
 }
