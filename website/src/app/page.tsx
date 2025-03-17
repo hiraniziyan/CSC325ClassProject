@@ -27,16 +27,27 @@ export default function Home() {
         <Hero />
         <div>
           <LogoCollection />
+
           <Features />
+
           <Divider />
+
           <Testimonials />
+
           <Divider />
+
           <Highlights />
+
           <Divider />
+
           <Pricing />
+
           <Divider />
+
           <FAQ />
+
           <Divider />
+          
           <Footer />
         </div>
       </Box>
