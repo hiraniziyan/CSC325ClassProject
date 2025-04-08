@@ -22,9 +22,10 @@ describe('Hero', () => {
   it('renders a call-to-action button', () => {
     render(<Hero />)
 
-    const button = screen.getByRole('button')
+    const cta = screen.getByRole('button')
 
-    expect(button).toBeInTheDocument()
+    expect(cta).toBeInTheDocument()
+
   })
 
   it('renders a hero image', () => {
