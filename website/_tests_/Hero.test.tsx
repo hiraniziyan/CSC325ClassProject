@@ -13,26 +13,22 @@ describe('Hero', () => {
 
   it('renders a subheading', () => {
     render(<Hero />)
-
-    const subheading = screen.getByRole('heading', { level: 2 }) // adjust level if needed
-
+    const subheading = screen.getByText((content) =>
+      content.startsWith("You're on a mission to build exceptional tech teams")
+    )    
     expect(subheading).toBeInTheDocument()
   })
 
   it('renders a call-to-action button', () => {
     render(<Hero />)
-
-    const cta = screen.getByRole('button')
-
-    expect(cta).toBeInTheDocument()
-
+    const button = screen.getByRole('button', { name: /go now/i })
+    expect(button).toBeInTheDocument()
   })
 
   it('renders a hero image', () => {
     render(<Hero />)
 
-    const image = screen.getByRole('img') // assumes the image has alt text
-
+    const image = screen.getByRole('img')
     expect(image).toBeInTheDocument()
   })
 })

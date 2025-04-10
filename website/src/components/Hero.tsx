@@ -27,6 +27,7 @@ const StyledBox = styled('div')(({ theme }) => ({
     marginTop: theme.spacing(10),
     height: 700,
   },
+
   ...theme.applyStyles('dark', {
     boxShadow: '0 0 24px 12px hsla(210, 100%, 25%, 0.2)',
     backgroundImage: `url(${process.env.TEMPLATE_IMAGE_URL || 'https://mui.com'}/static/screenshots/material-ui/getting-started/templates/dashboard-dark.jpg)`,
@@ -38,19 +39,19 @@ const StyledBox = styled('div')(({ theme }) => ({
 export default function Hero() {
   return (
     <Box
-      id="hero"
-      sx={(theme) => ({
-        width: '100%',
-        backgroundRepeat: 'no-repeat',
+    id="hero"
+    sx={(theme) => ({
+      width: '100%',
+      backgroundRepeat: 'no-repeat',
 
+      backgroundImage:
+        'radial-gradient(ellipse 80% 50% at 50% -20%, hsl(210, 100%, 90%), transparent)',
+      ...theme.applyStyles('dark', {
         backgroundImage:
-          'radial-gradient(ellipse 80% 50% at 50% -20%, hsl(210, 100%, 90%), transparent)',
-        ...theme.applyStyles('dark', {
-          backgroundImage:
-            'radial-gradient(ellipse 80% 50% at 50% -20%, hsl(210, 100%, 16%), transparent)',
-        }),
-      })}
-    >
+          'radial-gradient(ellipse 80% 50% at 50% -20%, hsl(210, 100%, 16%), transparent)',
+      }),
+    })}
+  >
       <Container
         sx={{
           display: 'flex',
@@ -65,6 +66,7 @@ export default function Hero() {
           useFlexGap
           sx={{ alignItems: 'center', width: { xs: '100%', sm: '70%' } }}
         >
+          
           <Typography
             variant="h1"
             sx={{
@@ -89,6 +91,12 @@ export default function Hero() {
               great hire
             </Typography>
           </Typography>
+          <img
+            src="https://c4.wallpaperflare.com/wallpaper/271/310/545/computers-wallpaper-thumb.jpg"
+            alt="Image"
+            style={{ width: '100%', borderRadius: '16px' }}
+          />
+          
           <Typography
             sx={{
               textAlign: 'center',
@@ -145,6 +153,7 @@ export default function Hero() {
             </Link>
             .
           </Typography>
+          
         </Stack>
       </Container>
     </Box>
